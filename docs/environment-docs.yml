@@ -1,0 +1,50 @@
+# Conda environment for building the canopy-app docs
+name: canopy-app-docs
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.9
+  #
+  # canopy-app deps
+    # Core
+  - f90nml
+  - netcdf4
+  - numpy
+  - pandas
+  - xarray
+  #
+  # Examples
+  - cartopy
+  - ipympl
+  - ipywidgets
+  - jupyterlab
+  - matplotlib
+  #
+  # Extra
+  - ipython
+  - pysolar
+  - monet
+  #
+  # Extras
+  - pooch
+  - typer
+
+  #
+  # Docs
+  - ipykernel
+  - jupyterlab=3.*
+  - jupytext
+  - myst-nb>=0.14
+  - nbclient
+  - sphinx=4.*
+  - sphinx-autobuild
+  - sphinx-click
+  - sphinx-design
+  - sphinx_rtd_theme
+  - sphinx-togglebutton
+  #
+  - pip
+  - pip:
+    # melodies_monet itself
+    - '-e ../'
