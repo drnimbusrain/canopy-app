@@ -9,9 +9,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'MELODIES-MONET'
-copyright = u'2022, NCAR/UCAR, NOAA'
-author = u'Rebecca Schwantes (NOAA), Barry Baker (NOAA), Louisa Emmons (NCAR), Rebecca Buchholz (NCAR)'
+project = u'canopy-app'
+copyright = u'2024, NOAA'
+author = u'Patrick Campbell (GMU/NOAA), Zachary Moon (NOAA)'
 
 # The short X.Y version
 version = u''
@@ -172,14 +172,14 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'melodies-monet.tex', u'MELODIES-MONET Documentation', u'Rebecca Schwantes (NOAA) \\and Barry Baker (NOAA) \\and Louisa Emmons (NCAR) \\and Rebecca Buchholz (NCAR)', 'manual'),
+    (master_doc, 'canopy-app.tex', u'canopy-app Documentation', u'Patrick Campbell (GMU/NOAA) \\and Zachary Moon (NOAA)', 'manual'),
 ]
 
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [(master_doc, 'melodies-monet', u'MELODIES-MONET Documentation', [author], 1)]
+man_pages = [(master_doc, 'canopy-app', u'canopy-app Documentation', [author], 1)]
 
 # -- Options for Texinfo output ----------------------------------------------
 
@@ -187,7 +187,7 @@ man_pages = [(master_doc, 'melodies-monet', u'MELODIES-MONET Documentation', [au
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'melodies-monet', u'melodies-monet Documentation', author, 'melodies-monet', 'Analysis tool for atmopsheric chemistry modeling.', 'Miscellaneous'),
+    (master_doc, 'canopy-app', u'canopy-app Documentation', author, 'canopy-app', 'Repository for low-level, stand-alone/column canopy parameterizations for testing and application to gridded atmospheric composition/air quality models.', 'Miscellaneous'),
 ]
 
 # -- Extension configuration -------------------------------------------------
