@@ -149,7 +149,7 @@ html_theme_options = {
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = "../melodies_monet/data/MM_logo.png"
+html_logo = "canopy-app-logo_no-bg.png"
 
 # -- Options for LaTeX output ------------------------------------------------
 
