@@ -40,8 +40,8 @@ extensions = [
 ]
 
 extlinks = {
-    'issue': ('https://github.com/noaa-csl/melodies-monet/issues/%s', 'GH'),
-    'pull': ('https://github.com/noaa-csl/melodies-monet/pull/%s', 'PR'),
+    'issue': ('https://github.com/noaa-csl/canopy-app/issues/%s', 'GH'),
+    'pull': ('https://github.com/noaa-csl/canopy-app/pull/%s', 'PR'),
 }
 
 autosummary_generate = True  # default in Sphinx v4
@@ -131,7 +131,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'melodies-monetdoc'
+htmlhelp_basename = 'canopy-appdoc'
 
 html_theme_options = {
     'logo_only': True,
