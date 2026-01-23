@@ -1,7 +1,7 @@
 ! canopy_soilno_mod.F90
 ! Module for soil NO emissions using BDSNP model and robust CRF
 ! See issue #65 for requirements
-
+!
 
 module canopy_soilno_mod
     use, intrinsic :: iso_fortran_env, only: real64
