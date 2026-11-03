@@ -108,8 +108,7 @@ jobs:
         uses: actions/checkout@v7
         with:
           fetch-depth: 0
-          #token: ${{ secrets.GITHUB_TOKEN }}
-          token: ${{ secrets.GH_PAGES_TOKEN }}
+          token: ${{ github.token }}
 
       - name: Set up Python
         uses: actions/setup-python@v7
@@ -132,14 +131,13 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git remote set-url origin https://x-access-token:${{ secrets.GH_PAGES_TOKEN }}@github.com/${{ github.repository }}.git
+          git remote set-url origin https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git
 
       - name: Deploy with mike (versioned documentation)
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
-          # Set GH_PAGES_TOKEN
-          git remote set-url origin https://x-access-token:${{ secrets.GH_PAGES_TOKEN }}@github.com/${{ github.repository }}.git
+          git remote set-url origin https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git
 
           # Determine version
           if [ "${{ github.event.inputs.version }}" != "" ]; then
